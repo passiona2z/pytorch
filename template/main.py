@@ -73,7 +73,7 @@ def train(model, trn_loader, device, criterion, optimizer):
 
         print(f"Epoch {epoch:2d}; trn_loss: {trn_loss:.3f}; trn_acc: {acc:.3f}| tst_loss: {tst_loss:.3f}; trn_acc: {tst_acc:.3f}")
 
-
+    """
     # visualize
     plt.figure(figsize=(12,4))
     plt.subplot(1,2,1)
@@ -95,6 +95,7 @@ def train(model, trn_loader, device, criterion, optimizer):
     plt.tight_layout()
     plt.savefig('train.png')
     plt.show()
+    """
 
     # model save
     torch.save(model, "model.pt")
