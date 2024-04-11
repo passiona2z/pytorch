@@ -1,7 +1,7 @@
 Assignment
 
 (1)  
-  a. The number of model parameters of LeNet-5 and your custom MLP
+a. The number of model parameters of LeNet-5 and your custom MLP
 
     LeNet5 total_params : 61,706 
     ----------------------------------------------------------------
@@ -37,14 +37,14 @@ Assignment
 
     - Both models(LeNet5, CustomMLP) have a similar number of parameters
 
-  b. How to compute model parameters
+b. How to compute model parameters
 
-    - total_params = sum(p.numel() for p in model.parameters())
-      print(total_params)
-      
-      * Tensor.numel() : Returns the total number of elements
+  - total_params = sum(p.numel() for p in model.parameters())
+    print(total_params)
+    
+    * Tensor.numel() : Returns the total number of elements
 
-    - (+) library : torchsummary.summary > summary(model,(input.shape))
+  - (+) library : torchsummary.summary > summary(model,(input.shape))
 
 
 (2) Plot above statistics (average loss value and accuracy) for training and testing.
@@ -52,10 +52,10 @@ Assignment
   - (Setting) train Epoch : 40, batch size = 256
 
   - LeNet5 statistics
-    ![screenshot]("template/lenet5.png")
+    ![screenshot](template/lenet5.png)
 
   - Custom MLP statistics
-    ![screenshot]("template/CustomMLP.png")
+    ![screenshot](template/CustomMLP.png)
 
     - Both models show continuous improvement in training loss and accuracy over time,
       but the test loss and accuracy improve in the beginning, and then converge to a specific value.
@@ -76,6 +76,6 @@ Assignment
   - (Test accuracy) 0.993, improvement : +0.003
 
   - statistics of LeNet5 applying two regularization techniques
-    ![screenshot]("template/lenet5_improve.png")
+    ![screenshot](template/lenet5_improve.png)
 
     - The results show that two regularization techniques help prevent overfitting and improve performance.
