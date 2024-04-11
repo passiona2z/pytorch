@@ -62,6 +62,7 @@ b. How to compute model parameters
     - Both models show continuous improvement in training loss and accuracy over time,
       but the test loss and accuracy improve in the beginning, and then converge to a specific value.
 
+
 ### (3) Comparing the predictive performances
 
   - LeNet5      : (Test accuracy) 0.990
@@ -73,12 +74,12 @@ b. How to compute model parameters
 
   - Two regularization techniques
     
-      a. Dropout(ratio = 0.2)
+      a. Dropout(ratio = 0.1)
       b. BatchNormalization
 
   - (Test accuracy) 0.993, improvements: +0.003
 
-  - (statistics of LeNet5 applying two regularization techniques)
+  - (Statistics of LeNet5 applying two regularization techniques)
     ![screenshot](template/lenet5_improve.png)
 
     - The results show that two regularization techniques help prevent overfitting and improve performance.
