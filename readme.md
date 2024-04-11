@@ -40,6 +40,7 @@ a. The number of model parameters of LeNet-5 and your custom MLP
 b. How to compute model parameters
 
   - total_params = sum(p.numel() for p in model.parameters())
+    
     print(total_params)
     
     * Tensor.numel() : Returns the total number of elements
@@ -47,9 +48,9 @@ b. How to compute model parameters
   - (+) library : torchsummary.summary > summary(model,(input.shape))
 
 
-(2) Plot above statistics (average loss value and accuracy) for training and testing.
+(2) Plot statistics (average loss value and accuracy) for training and testing.
 
-  - (Setting) train Epoch : 40, batch size = 256
+  - (Setting) train Epochs : 40, batch size = 256
 
   - LeNet5 statistics
     ![screenshot](template/lenet5.png)
@@ -67,15 +68,15 @@ b. How to compute model parameters
     - LeNet5 shows higher performances than CustomMLP
 
 
-(4) Employ at least more than two regularization techniques to improve LeNet-5 model
+(4) Employ at least more than two regularization techniques to improve LeNet5 model
 
   - Three regularization techniques
   a. Dropout
   b. BatchNormalization
 
-  - (Test accuracy) 0.993, improvement : +0.003
+  - (Test accuracy) 0.993, improvements : +0.003
 
-  - statistics of LeNet5 applying two regularization techniques
+  - (statistics of LeNet5 applying two regularization techniques)
     ![screenshot](template/lenet5_improve.png)
 
     - The results show that two regularization techniques help prevent overfitting and improve performance.
