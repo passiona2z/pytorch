@@ -52,10 +52,10 @@ Assignment
   - (Setting) train Epoch : 40, batch size = 256
 
   - LeNet5 statistics
-    ![screenshot](lenet5.png)
+    ![screenshot]("template/lenet5.png")
 
   - Custom MLP statistics
-    ![screenshot](CustomMLP.png)
+    ![screenshot]("template/CustomMLP.png")
 
     - Both models show continuous improvement in training loss and accuracy over time,
       but the test loss and accuracy improve in the beginning, and then converge to a specific value.
@@ -76,6 +76,6 @@ Assignment
   - (Test accuracy) 0.993, improvement : +0.003
 
   - statistics of LeNet5 applying two regularization techniques
-    ![screenshot](lenet5_improve.png)
+    ![screenshot]("template/lenet5_improve.png")
 
     - The results show that two regularization techniques help prevent overfitting and improve performance.
