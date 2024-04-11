@@ -1,6 +1,6 @@
 Assignment
 
-(1)  
+(1) Model parameters
 a. The number of model parameters of LeNet-5 and your custom MLP
 
     LeNet5 total_params : 61,706 
@@ -39,7 +39,7 @@ a. The number of model parameters of LeNet-5 and your custom MLP
 
 b. How to compute model parameters
 
-  - total_params = sum(p.numel() for p in model.parameters())
+    total_params = sum(p.numel() for p in model.parameters())
     
     print(total_params)
     
@@ -73,9 +73,9 @@ Comparing the predictive performances
 (4) 
 Employ at least more than two regularization techniques to improve LeNet5 model
 
-  - Three regularization techniques
+  - Two regularization techniques
     
-      a. Dropout
+      a. Dropout(ratio = 0.2)
       b. BatchNormalization
 
   - (Test accuracy) 0.993, improvements: +0.003
