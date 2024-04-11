@@ -44,7 +44,7 @@ class LeNet5(nn.Module):
 class LeNet5_improve(nn.Module):
     """ LeNet-5 (LeCun et al., 1998)
         - Dropout
-        - 
+        - BatchNorm
     """
 
     def __init__(self):
