@@ -1,6 +1,6 @@
-Assignment
+## Assignment
 
-(1) Model parameters
+### (1) Model parameters
 
 a. The number of model parameters of LeNet-5 and your custom MLP
 
@@ -49,8 +49,7 @@ b. How to compute model parameters
   - (+) library : torchsummary.summary > summary(model,(input.shape))
 
 
-(2) 
-Plot statistics (average loss value and accuracy) for training and testing.
+### (2) Plot statistics (average loss value and accuracy) for training and testing.
 
   - (Setting) train Epochs : 40, batch size = 256
 
@@ -63,16 +62,14 @@ Plot statistics (average loss value and accuracy) for training and testing.
     - Both models show continuous improvement in training loss and accuracy over time,
       but the test loss and accuracy improve in the beginning, and then converge to a specific value.
 
-(3) 
-Comparing the predictive performances
+### (3) Comparing the predictive performances
 
   - LeNet5      : (Test accuracy) 0.990
   - CustomMLP   : (Test accuracy) 0.978
     - LeNet5 shows higher performances than CustomMLP
 
 
-(4) 
-Employ at least more than two regularization techniques to improve LeNet5 model
+### (4) Employing at least more than two regularization techniques to improve LeNet5 model
 
   - Two regularization techniques
     
