@@ -72,9 +72,10 @@ b. How to compute model parameters
 
 ### (4) Employing at least more than two regularization techniques to improve LeNet5 model
 
-  - Two regularization techniques
+  - Apply Two regularization techniques
     
       a. Dropout(ratio = 0.1)
+    
       b. BatchNormalization
 
   - (Test accuracy) 0.993, improvements: +0.003
