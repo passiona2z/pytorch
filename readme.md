@@ -1,6 +1,7 @@
 Assignment
 
 (1) Model parameters
+
 a. The number of model parameters of LeNet-5 and your custom MLP
 
     LeNet5 total_params : 61,706 
