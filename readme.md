@@ -40,13 +40,21 @@ a. The number of model parameters of LeNet-5 and your custom MLP
 
 b. How to compute model parameters
 
-    total_params = sum(p.numel() for p in model.parameters())
-    
-    print(total_params)
-    
-    * Tensor.numel() : Returns the total number of elements
+  - Check CustomMLP total_params
 
-  - (+) library : torchsummary.summary > summary(model,(input.shape))
+        CustomMLP total_params = ((32 * 32) * x + x) + (x * y + y) + (y * 10 + 10)
+
+        - select (fc layer1) x = 58, (fc layer2) y = 33
+
+  - Count total_params
+
+        total_params = sum(p.numel() for p in model.parameters())
+        
+        print(total_params)
+        
+        * Tensor.numel() : Returns the total number of elements
+
+      - (+) library : torchsummary.summary > summary(model,(input.shape))
 
 
 ### (2) Plot statistics (average loss value and accuracy) for training and testing.
