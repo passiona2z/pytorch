@@ -53,14 +53,14 @@ def train(model, trn_loader, device, criterion, optimizer):
             loss.backward()  
             optimizer.step()  
             
-            # loss count
+            # loss sum
             total_loss    += loss.item()
             
             # accuracy count
             correct_num += (torch.argmax(predict, dim=1) == label).sum().item()
 
 
-        trn_loss = total_loss / total_samples
+        trn_loss = total_loss / len(trn_loader[0])
         acc  = correct_num / total_samples
 
         trn_loss_list.append(trn_loss)
@@ -133,14 +133,14 @@ def test(model, tst_loader, device, criterion):
 
         loss = criterion(predict, label)
         
-        # loss count
+        # loss sum
         total_loss  += loss.item()
         
         # accuracy count
         correct_num += (torch.argmax(predict, dim=1) == label).sum().item()
 
 
-        tst_loss = total_loss / total_samples
+        tst_loss = total_loss / len(tst_loader)
         acc  = correct_num / total_samples
 
     return tst_loss, acc

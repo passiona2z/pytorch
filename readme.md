@@ -74,7 +74,7 @@ b. How to compute model parameters
 ### (3) Comparing the predictive performances
 
   - LeNet5      : (Test accuracy) 0.990
-  - CustomMLP   : (Test accuracy) 0.978
+  - CustomMLP   : (Test accuracy) 0.977
     - LeNet5 shows higher performances than CustomMLP
 
 
